@@ -10,7 +10,7 @@ class BlogController extends Controller
     {
         $blogs = Blog::where('is_active', true)->latest()->get();
 
-        if (!$blogs) {
+        if ($blogs->isEmpty()) {
             return redirect()->back()->with('error', 'No blogs found');
         }
 
