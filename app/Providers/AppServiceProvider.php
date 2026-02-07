@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer('components.navbar', function ($view) {
-            $view->with('services', Service::all());
+            $view->with('services', Service::where('is_active', true)->get());
         });
     }
 }
