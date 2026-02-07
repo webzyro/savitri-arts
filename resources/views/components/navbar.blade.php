@@ -22,7 +22,10 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{ route('service.index') }}">All Services</a></li>
-
+                        @foreach ($services as $service)
+                            <li><a class="dropdown-item"
+                                    href="{{ route('service.show', $service->slug) }}">{{ $service->title }}</a></li>
+                        @endforeach
                     </ul>
                 </li>
                 <li class="nav-item">
