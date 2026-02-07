@@ -8,13 +8,11 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::where('is_active', true)->latest();
+        $blogs = Blog::where('is_active', true)->latest()->get();
 
-        // if (!$blogs) {
-        //     return redirect()->back()->with('error', 'No blogs found');
-        // }
-
-        dd($blogs);
+        if (!$blogs) {
+            return redirect()->back()->with('error', 'No blogs found');
+        }
 
         return view('blogs', ['blogs' => $blogs]);
     }
