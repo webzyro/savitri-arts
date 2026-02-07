@@ -5,7 +5,7 @@
         <!-- Footer Top: Logo & Socials -->
         <div class="footer-top-bar d-flex flex-wrap justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-2">
-                <img src="assets/images/logo.webp" alt="Luxine Logo" class="footer-logo">
+                <img src="{{ asset('assets/images/logo.webp') }}" alt="Luxine Logo" class="footer-logo">
             </div>
             <div class="social-icons">
                 <a href="#" class="btn-social text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>

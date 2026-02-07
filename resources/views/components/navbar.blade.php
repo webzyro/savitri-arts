@@ -15,19 +15,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('about') }}">ABOUT US</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="{{ route('service') }}">SERVICES</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
+                </li> -->
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        PRODUCTS
+                        SERVICES
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Product 1</a></li>
-                        <li><a class="dropdown-item" href="#">Product 2</a></li>
+                        <li><a class="dropdown-item" href="{{ route('service') }}">All Services</a></li>
+                        <li><a class="dropdown-item" href="#">CNC Cutting Services</a></li>
+                        <li><a class="dropdown-item" href="#">Design & Execution Services</a></li>
                     </ul>
-                </li> -->
+                </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="{{ route('blogs') }}">BLOGS</a>
                 </li>

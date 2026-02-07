@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -27,7 +28,6 @@ Route::get('/our-products', function () {
     return view('products');
 })->name('products');
 
-Route::get('/blogs', function () {
-    return view('blogs');
-})->name('blogs');
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs');
+Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blog.show');
 

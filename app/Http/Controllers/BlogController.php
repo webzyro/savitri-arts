@@ -14,7 +14,7 @@ class BlogController extends Controller
             return redirect()->back()->with('error', 'No blogs found');
         }
 
-        return view('blogs', ['blogs' => $blogs]);
+        return view('blog.blogs', ['blogs' => $blogs]);
     }
 
     public function show(string $slug)
@@ -25,6 +25,6 @@ class BlogController extends Controller
             return redirect()->back()->with('error', 'No blog found');
         }
 
-        return view('blog', ['blog' => $blog]);
+        return view('blog.show', ['blog' => $blog]);
     }
 }
