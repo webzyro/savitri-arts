@@ -1,0 +1,385 @@
+.breadcrumb-section{
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2574&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.breadcrumb-section::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.breadcrumb-section .container{
+    position: relative;
+    z-index: 1;
+}
+
+.bread-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bread-wrapper h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* What We Do Section */
+.what-we-do-section {
+    background-color: #fdfbf7; /* Light luxury cream background */
+}
+
+.service-item h4 {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Arch Container */
+.arch-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.arch-image-wrapper {
+    width: 100%;
+    height: 500px;
+    border-radius: 200px 200px 20px 20px; /* Luxury Arch Shape */
+    overflow: hidden;
+    border: 8px solid #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.arch-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Badge */
+.contact-badge-wrapper {
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.contact-badge {
+    width: 120px;
+    height: 120px;
+    background-color: #5c624d; /* Dark olive/green tone from example */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.badge-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #fff;
+    animation: rotateBadge 10s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-icon-bg {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+@keyframes rotateBadge {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .arch-container {
+        max-width: 350px;
+    }
+    .arch-image-wrapper {
+        height: 450px;
+    }
+    .contact-badge-wrapper {
+        right: 0;
+        top: 0;
+        transform: translate(20%, -20%);
+    }
+    .contact-badge {
+        width: 100px;
+        height: 100px;
+    }
+    .badge-icon-bg {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Features Section */
+.features-section {
+    background-color: #fdfbf7;
+}
+
+.stat-item h3 {
+    line-height: 1;
+}
+
+.video-card {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.video-overlay {
+    background: rgba(0,0,0,0.2);
+}
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.icon-box-large {
+    width: 60px;
+    height: 60px;
+    background-color: #f8f5f0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-badge {
+    color: #5c624d;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tag-badge:hover {
+    background-color: #8c7d53 !important;
+    color: #fff !important;
+}
+
+.avatar-group img {
+    border: 2px solid #fff;
+}
+
+/* Reusing Circular Badge from Why Choose Us if needed, or defining unique one */
+.video-overlay .circular-badge {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.video-overlay .rotating-text-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-overlay svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateBadge 12s linear infinite;
+}
+
+.video-overlay .badge-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #8c7d53;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover .badge-icon {
+    transform: scale(1.1);
+}
+
+/* Team Section */
+.team-section {
+    background-color: #fdfbf7;
+}
+
+.team-card {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.team-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-overlay {
+    padding-bottom: 2.5rem !important;
+}
+
+.team-overlay h5 {
+    letter-spacing: 0.5px;
+}
+
+/* Avatar Stack Utility */
+.avatar-stack img:not(:first-child) {
+    margin-left: -15px;
+}
+
+/* Service Grid Section */
+.service-item-card {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.service-item-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: -1;
+}
+
+.service-arrow-btn {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.service-arrow-btn:hover {
+    background-color: #8c7d53;
+    color: #fff !important;
+}
+
+.service-icon i {
+    opacity: 0.9;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #fdfbf7;
+}
+
+.contact-info-card, .contact-form-card {
+    border: none;
+    transition: transform 0.3s ease;
+    height: fit-content !important;
+}
+
+.icon-box-md {
+    background-color: #f8f5f0;
+    color: #8c7d53;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #fff !important;
+    border: 1px solid #8c7d53 !important;
+}
+
+.btn-submit {
+    background-color: #8c7d53;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #5c624d;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.bg-blur {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Gallery Section */
+.gallery-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.aspect-ratio-box {
+    aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
