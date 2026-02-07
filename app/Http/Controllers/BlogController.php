@@ -8,7 +8,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::where('is_active', true)->get();
+        $blogs = Blog::where('is_active', true)->latest();
 
         // if (!$blogs) {
         //     return redirect()->back()->with('error', 'No blogs found');
