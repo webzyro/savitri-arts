@@ -16,7 +16,7 @@
                             </div>
                             <h4 class="text-white fw-bold mb-3">{{ $service->title }}</h4>
                             <p class="text-white opacity-75 small mb-auto">
-                                {{ Str::limit(strip_tags($service->description), 150) }}
+                                {{ Str::limit(strip_tags($service->description), 60) }}
                             </p>
                             <div class="mt-4">
                                 <a href="{{ route('service.show', $service->slug) }}" class="service-arrow-btn">

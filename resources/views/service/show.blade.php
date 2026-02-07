@@ -11,10 +11,10 @@
                         <div class="service-image mb-4">
                             <img src="{{ Storage::disk('uploads')->url($service->image) }}" alt="{{ $service->title }}"
                                 class="img-fluid rounded-4 shadow-sm w-100"
-                                style="max-height: 500px; object-fit: cover;">
+                                style="max-height: 400px; object-fit: cover;">
                         </div>
-                        <h1 class="fw-bold mb-4">{{ $service->title }}</h1>
-                        <div class="service-description fs-5 text-muted">
+                        <h1 class="fw-bold mb-4" style="color: #a49464;">{{ $service->title }}</h1>
+                        <div class="service-description fs-5">
                             {!! $service->description !!}
                         </div>
                     </div>
