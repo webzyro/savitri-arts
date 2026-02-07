@@ -16,11 +16,7 @@ class ServiceController extends Controller
 
     public function show(string $slug)
     {
-        $service = Service::where('slug', $slug)->first();
-
-        if (!$service) {
-            return redirect()->back()->with('error', 'Service Not Found');
-        }
+        $service = Service::where('slug', $slug)->firstOrFail();
 
         return view('service.show', ['service' => $service]);
     }
