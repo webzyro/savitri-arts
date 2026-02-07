@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
+@props([
+    'metaTitle' => config('app.name', 'Laravel'),
+    'metaDescription' => 'Expert Architecture and Interior Design Services',
+    'metaKeywords' => 'Architecture, Interior Design, Savitri Arts',
+])
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ $metaDescription }}">
+    <meta name="keywords" content="{{ $metaKeywords }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ $metaTitle }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

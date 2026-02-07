@@ -11,16 +11,12 @@ class ServiceController extends Controller
     {
         $services = Service::where('is_active', true)->latest()->get();
 
-        if ($services->isEmpty()) {
-            return redirect()->back()->with('error', 'No Service Available');
-        }
-
         return view('service.index', ['services' => $services]);
     }
 
     public function show(string $slug)
     {
-        $service = Service::where('slug', $slug)->firstOrFail();
+        $service = Service::where('slug', $slug)->first();
 
         if (!$service) {
             return redirect()->back()->with('error', 'Service Not Found');
