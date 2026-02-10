@@ -14,9 +14,11 @@ class ProjectForm
         return $schema
             ->components([
                 TextInput::make('title')
-                    ->required(),
+                    ->required()
+                    ->maxLength(255),
                 TextInput::make('caption')
-                    ->required(),
+                    ->required()
+                    ->maxLength(255),
                 Toggle::make('is_active')
                     ->default(true)
                     ->required(),
