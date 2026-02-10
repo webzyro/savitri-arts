@@ -1,4 +1,6 @@
-<x-layout>
+<x-layout metaTitle="Savitri Arts and Advertisement | Home Page"
+    metaDescription="We create elegant, high end interiors that reflect comfort, sophistication, and timeless beauty turning everyday living into a luxurious experience."
+    metaKeywords="interior design, architecture, high-end interiors, luxury living, Savitri Arts and Advertisement">
     <!-- Hero Section -->
     <section class="hero-section d-flex align-items-center position-relative">
         <div class="overlay"></div>

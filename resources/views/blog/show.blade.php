@@ -1,4 +1,5 @@
-<x-layout>
+<x-layout :metaTitle="$blog->meta_title" :metaDescription="$blog->meta_description"
+    :metaKeywords="$blog->meta_keywords">
     <x-breadcrumb title="{{ $blog->title }}" />
     <x-scrolling />
 
