@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
@@ -18,10 +19,6 @@ Route::get('/contact-us', function () {
     return view('contact');
 })->name('contact');
 
-Route::get('/our-gallery', function () {
-    return view('gallery');
-})->name('gallery');
-
 Route::get('/our-products', function () {
     return view('products');
 })->name('products');
@@ -33,4 +30,6 @@ Route::get('/our-services', [ServiceController::class, 'index'])->name('service.
 Route::get('/our-services/{slug}', [ServiceController::class, 'show'])->name('service.show');
 
 Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials');
+
+Route::get('/our-gallery', [GalleryController::class, 'index'])->name('gallery');
 
