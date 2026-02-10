@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout :metaTitle="$blog->meta_title ?? $blog->title" :metaDescription="$blog->meta_description ?? Str::limit(strip_tags($blog->description), 160)" + :metaKeywords="$blog->meta_keywords ?? ''">
     <x-breadcrumb title="{{ $blog->title }}" />
     <x-scrolling />
 

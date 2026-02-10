@@ -1,4 +1,6 @@
-<x-layout title="Testimonials - Savitri Arts">
+<x-layout metaTitle="Savitri Arts and Advertisement | Testimonials Page"
+    metaDescription="Read what our clients have to say about their experience with Savitri Arts. Discover how we've transformed homes and offices through our expert architectural and interior design services."
+    metaKeywords="client testimonials, design reviews, interior design feedback, architecture project reviews, customer success stories, Savitri Arts reviews">
     <x-breadcrumb title="Testimonials" />
     <x-scrolling />
 

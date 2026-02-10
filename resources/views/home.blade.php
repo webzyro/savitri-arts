@@ -1,4 +1,6 @@
-<x-layout>
+<x-layout metaTitle="Savitri Arts and Advertisement | Home Page"
+    metaDescription="Experience the perfect blend of technical precision and artistic expression. Savitri Arts specializes in innovative architecture and elegant interior design crafted for modern living."
+    metaKeywords="architecture design, interior styling, luxury home design, modern office spaces, Savitri Arts home, design consultancy">
     <!-- Hero Section -->
     <section class="hero-section d-flex align-items-center position-relative">
         <div class="overlay"></div>

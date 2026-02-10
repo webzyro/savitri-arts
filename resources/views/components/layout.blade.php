@@ -15,6 +15,8 @@
 
     <title>{{ $metaTitle }}</title>
 
+    <link rel="canonical" href="{{ url()->current() }}" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -1,4 +1,6 @@
-<x-layout>
+<x-layout metaTitle="Savitri Arts and Advertisement | Services Page"
+    metaDescription="Discover our comprehensive range of architecture and interior design services. From residential styling to commercial project management, we bring your vision to life with precision."
+    metaKeywords="residential architecture, commercial design, interior styling services, project management, technical design solutions, furniture consultancy">
     <x-breadcrumb title="Our Services" />
     <x-scrolling />
 
