@@ -1,29 +1,27 @@
 <?php
 
-namespace App\Filament\Resources\Services\Tables;
+namespace App\Filament\Resources\Testimonials\Tables;
 
-use Filament\Actions\EditAction;
+use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
-use Filament\Actions\BulkAction;
-use Filament\Tables\Columns\IconColumn;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Collection;
 
-class ServicesTable
+class TestimonialsTable
 {
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('title')
+                TextColumn::make('author')
                     ->searchable(),
-                ImageColumn::make('image')
+                ImageColumn::make('author_img')
                     ->disk('uploads')
-                    ->circular(),
-                IconColumn::make('is_active')
-                    ->boolean(),
+                    ->circular()
+                    ->label('Author Image'),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -41,10 +39,9 @@ class ServicesTable
                 DeleteAction::make(),
             ])
             ->toolbarActions([
-                BulkAction::make('delete')
-                    ->requiresConfirmation()
-                    ->authorizeIndividualRecords('delete')
-                    ->action(fn(Collection $records) => $records->each->delete())
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
+                ]),
             ]);
     }
 }

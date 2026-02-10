@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -30,4 +31,6 @@ Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
 Route::get('/our-services', [ServiceController::class, 'index'])->name('service.index');
 Route::get('/our-services/{slug}', [ServiceController::class, 'show'])->name('service.show');
+
+Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials');
 

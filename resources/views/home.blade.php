@@ -121,7 +121,7 @@
                         solutions focused on enhancing aesthetics, improving
                         functionality, and bringing your ideas to life.
                     </p>
-                    <a href="#"
+                    <a href="{{ route('service.index') }}"
                         class="btn btn-contact px-4 py-2 rounded-pill d-inline-flex align-items-center gap-2">View All
                         Services
                         <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -243,7 +243,7 @@
             <!-- Bottom Strip -->
             <div class="text-center pt-3">
                 <span class="badge bg-warning text-dark px-3 py-2 rounded-pill me-2">Free</span>
-                <span class="fw-medium text-secondary">Discover Our Tailored Architecture & Interior Services –
+                <span class="fw-medium text-secondary">Discover Our Tailored Architecture & Interior Services -
                     <a href="#" class="text-dark fw-bold text-decoration-underline">Where Style Meets
                         Structure</a></span>
             </div>

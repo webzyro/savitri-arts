@@ -34,13 +34,13 @@
                 <h5 class="footer-title">Quick Links</h5>
                 <ul class="footer-links">
                     <li><i class="fa-solid fa-star-of-life x-small text-warning" style="font-size: 8px;"></i><a
-                            href="/">Home</a></li>
+                            href="{{ route('home') }}">Home</a></li>
                     <li><i class="fa-solid fa-star-of-life x-small text-warning" style="font-size: 8px;"></i><a
-                            href="#">About Us</a></li>
+                            href="{{ route('about') }}">About Us</a></li>
                     <li><i class="fa-solid fa-star-of-life x-small text-warning" style="font-size: 8px;"></i><a
-                            href="#">Our Projects</a></li>
+                            href="{{ route('testimonials') }}">Testimonials</a></li>
                     <li><i class="fa-solid fa-star-of-life x-small text-warning" style="font-size: 8px;"></i><a
-                            href="#">Contact Us</a></li>
+                            href="{{ route('contact') }}">Contact Us</a></li>
                 </ul>
             </div>
 

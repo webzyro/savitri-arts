@@ -93,7 +93,7 @@
                 </div>
 
                 <div class="d-flex flex-wrap align-items-center gap-4">
-                    <a href="#"
+                    <a href="{{ route('about') }}"
                         class="text-decoration-none btn-contact px-4 py-3 rounded-pill d-flex align-items-center gap-2">More
                         About Us
                         <i class="fa-solid fa-arrow-up-right-from-square"></i></a>

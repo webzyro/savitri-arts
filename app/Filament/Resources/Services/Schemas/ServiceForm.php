@@ -40,7 +40,8 @@ class ServiceForm
                     ->label('Meta Keywords')
                     ->required(),
                 Toggle::make('is_active')
-                    ->required(),
+                    ->required()
+                    ->default(true),
             ]);
     }
 }

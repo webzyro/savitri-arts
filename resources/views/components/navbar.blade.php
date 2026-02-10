@@ -34,13 +34,10 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="{{ route('gallery') }}">GALLERY</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ route('contact') }}">CONTACT US</a>
-                </li>
             </ul>
         </div>
         <div class="d-none d-lg-block">
-            <a href="#" class="text-decoration-none btn-contact px-4 py-3 rounded-pill">Contact Us
+            <a href="{{ route('contact') }}" class="text-decoration-none btn-contact px-4 py-3 rounded-pill">Contact Us
                 <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
         </div>
     </div>

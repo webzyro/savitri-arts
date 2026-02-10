@@ -30,7 +30,8 @@ class BlogForm
                 TextInput::make('author')
                     ->required(),
                 Toggle::make('is_active')
-                    ->required(),
+                    ->required()
+                    ->default(true),
                 TextInput::make('meta_title')
                     ->required(),
                 TextInput::make('meta_description')
