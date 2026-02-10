@@ -238,12 +238,7 @@ html, body {
     }
 
     .about-img-inset {
-        bottom: auto;
-        left: auto;
-        height: auto;
-        position: relative;
-        width: 90%;
-        margin: -50px auto 0;
+        display: none;
     }
 
     .vertical-text {

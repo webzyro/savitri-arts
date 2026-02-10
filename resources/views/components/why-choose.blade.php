@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <a href="#"
+                <a href="{{ route('contact') }}"
                     class="text-decoration-none btn-contact px-5 py-3 rounded-pill d-inline-flex align-items-center gap-2">Get
                     in Touch
                     <i class="fa-solid fa-arrow-up-right-from-square"></i></a>

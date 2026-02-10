@@ -19,7 +19,7 @@
                 living.
             </p>
             <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-                <a href="#"
+                <a href="tel:+91-1234567890"
                     class="text-decoration-none btn-quote px-4 py-3 rounded-pill d-flex align-items-center gap-2">Get
                     Free Quote
                     <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -44,21 +44,21 @@
     <section class="category-section py-5 bg-white">
         <div class="container">
             <!-- Header -->
-            <div class="row g-4 align-items-center">
+            <div class="row g-4 align-items-center mb-3">
                 <div class="col-12">
                     <div class="d-flex align-items-center justify-content-center mb-3">
                         <i class="fa-solid fa-star-of-life me-2 text-warning"></i>
                         <span class="text-uppercase fw-semibold" style="font-size: 0.85rem; letter-spacing: 1px">Our
                             Categories</span>
                     </div>
-                    <h4 class="display-6 fw-bold text-center">
+                    <h4 class="display-6 fw-semibold text-center">
                         EXPLORE OUR WIDE RANGE OF INTERIOR DESIGN CATEGORIES
                     </h4>
                 </div>
             </div>
 
             <div class="row g-4 align-items-center">
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <div class="category-card">
                         <div class="category-image">
                             <img src="{{ asset('assets/images/category1.webp') }}" alt="category image" />
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <div class="category-card">
                         <div class="category-image">
                             <img src="{{ asset('assets/images/category2.webp') }}" alt="category image" />
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <div class="category-card">
                         <div class="category-image">
                             <img src="{{ asset('assets/images/category3.jfif') }}" alt="category image" />
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <div class="category-card">
                         <div class="category-image">
                             <img src="{{ asset('assets/images/category4.webp') }}" alt="category image" />
@@ -280,7 +280,7 @@
                         solutions focused on enhancing aesthetics, improving
                         functionality, and bringing your ideas to life.
                     </p>
-                    <a href="#"
+                    <a href="{{ route('testimonials') }}"
                         class="text-decoration-none btn-contact px-5 py-3 rounded-pill d-inline-flex align-items-center gap-2">
                         View All Projects
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -353,7 +353,8 @@
             </div>
 
             <!-- Trusted By / Logo Carousel -->
-            <div class="trusted-bar d-flex align-items-center gap-4 py-4 border-top border-secondary">
+            <div
+                class="trusted-bar d-flex flex-column flex-lg-row align-items-center gap-4 py-4 border-top border-secondary">
                 <div class="trusted-text pe-4 border-end border-secondary">
                     <h6 class="text-white fw-bold mb-1 text-uppercase small" style="letter-spacing: 1px">
                         Trusted By More Than
@@ -378,15 +379,119 @@
                             <img src="assets/images/google-cloud.png" alt="logo" class="logo-img filter-white" />
                         </div>
                         <div class="item">
-                            <img src="assets/images/mysql.png" alt="logo" class="logo-img filter-white" </div>
+                            <img src="assets/images/mysql.png" alt="logo" class="logo-img filter-white" />
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Testimonials Section -->
     <x-testimonial />
+
+    <!-- Contact Section -->
+    <section class="contact-section py-3" style="background-color: #fdfbf7;">
+        <div class="container py-lg-5">
+            <div class="row g-5">
+                <!-- Left Column: Contact Info -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card bg-white p-4 p-lg-5 rounded-5 shadow-sm h-100">
+                        <h3 class="fw-bold mb-3">Get In Touch</h3>
+                        <p class="text-secondary small mb-5">
+                            We'd love to hear from you! Whether you have questions, need a consultation, or want to
+                            discuss
+                            a new project.
+                        </p>
+
+                        <div class="contact-info-item d-flex align-items-center gap-3 mb-5">
+                            <div class="icon-box-md rounded-circle border d-flex align-items-center justify-content-center"
+                                style="width: 50px; height: 50px;">
+                                <i class="fa-solid fa-phone text-warning"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Phone Number</h6>
+                                <p class="text-secondary small mb-0">+(123) 456-789</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item d-flex align-items-center gap-3 mb-5">
+                            <div class="icon-box-md rounded-circle border d-flex align-items-center justify-content-center"
+                                style="width: 50px; height: 50px;">
+                                <i class="fa-solid fa-envelope text-warning"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Email Address</h6>
+                                <p class="text-secondary small mb-0">info@domainname.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item d-flex align-items-center gap-3">
+                            <div class="icon-box-md flex-shrink-0 rounded-circle border d-flex align-items-center justify-content-center"
+                                style="width: 50px; height: 50px;">
+                                <i class="fa-solid fa-location-dot text-warning"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Our Location</h6>
+                                <p class="text-secondary small mb-0">2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-card bg-white p-4 p-lg-5 rounded-5 shadow-sm">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-star-of-life me-2 text-warning" style="font-size: 0.8rem;"></i>
+                            <span class="text-uppercase fw-semibold" style="font-size: 0.85rem; letter-spacing: 1px">Get
+                                In
+                                Touch</span>
+                        </div>
+                        <h2 class="display-6 fw-bold text-uppercase mb-3">SEND US A MESSAGE</h2>
+                        <p class="text-secondary small mb-3">
+                            Have a question, project idea, or design inquiry? We'd love to hear from you! Whether you're
+                            looking for expert advice, a consultation, or just want to explore design possibilities.
+                        </p>
+
+                        <form id="contactForm" class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">First Name*</label>
+                                <input type="text" class="form-control bg-light border-0 py-3"
+                                    placeholder="Enter Your First Name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">Last Name*</label>
+                                <input type="text" class="form-control bg-light border-0 py-3"
+                                    placeholder="Enter Your Last Name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">Phone Number*</label>
+                                <input type="tel" class="form-control bg-light border-0 py-3"
+                                    placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">Email Address*</label>
+                                <input type="email" class="form-control bg-light border-0 py-3"
+                                    placeholder="Enter Your Email Address">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">Message*</label>
+                                <textarea class="form-control bg-light border-0 py-3" rows="2"
+                                    placeholder="Any Additional Message.."></textarea>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <button type="submit" class="btn btn-submit px-5 py-3 rounded-pill text-white fw-bold">
+                                    Submit Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FAQ Section -->
     <x-faq />

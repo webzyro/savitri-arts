@@ -19,7 +19,7 @@
                     design process ensures every project is handled with creativity,
                     precision, and attention to detail.
                 </p>
-                <a href="#"
+                <a href="{{ route('contact') }}"
                     class="text-decoration-none btn-contact px-4 py-3 rounded-pill d-inline-flex align-items-center gap-2">
                     Contact Us
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -143,7 +143,8 @@
                 </div>
                 <span class="fw-medium text-secondary">
                     Let's make something great work together.
-                    <a href="#" class="text-dark fw-bold text-decoration-underline ms-1">Get Free Quote</a>
+                    <a href="tel:+91-1234567890" class="text-dark fw-bold text-decoration-underline ms-1">Get Free
+                        Quote</a>
                 </span>
             </div>
         </div>

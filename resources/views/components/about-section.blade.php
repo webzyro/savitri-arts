@@ -1,8 +1,8 @@
 <section class="about-section py-5">
     <div class="container py-lg-4">
-        <div class="row gx-lg-5 align-items-center">
+        <div class="row g-4 gx-lg-5 align-items-center">
             <!-- Left Column: Images -->
-            <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="col-lg-6 mb-lg-0">
                 <div class="position-relative about-images-container ps-lg-4">
                     <!-- Vertical Text -->
                     <div class="vertical-text d-none d-lg-block">

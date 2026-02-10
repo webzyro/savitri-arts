@@ -34,6 +34,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="{{ route('gallery') }}">GALLERY</a>
                 </li>
+                <li class="d-lg-none nav-item">
+                    <a class="nav-link text-white" href="{{ route('contact') }}">CONTACT US</a>
+                </li>
             </ul>
         </div>
         <div class="d-none d-lg-block">
