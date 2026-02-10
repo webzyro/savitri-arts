@@ -10,7 +10,7 @@
             <div class="row g-4">
                 @foreach ($blogs as $blog)
                     <div class="col-md-4">
-                        <x-blog-card image="{{ asset('uploads/' . $blog->image) }}"
+                        <x-blog-card image="{{ Storage::disk('uploads')->url($blog->image) }}"
                             date="{{ $blog->created_at->format('F j, Y') }}" author="{{ $blog->author }}"
                             title="{{ $blog->title }}" excerpt="{{ Str::limit(strip_tags($blog->description), 150) }}"
                             link="{{ route('blog.show', $blog->slug) }}" />

@@ -12,7 +12,7 @@
                 @foreach ($services as $service)
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item-card rounded-4 p-4 d-flex flex-column"
-                            style="background-image: url('{{ asset('uploads/' . $service->image) }}');">
+                            style="background-image: url('{{ Storage::disk('uploads')->url($service->image) }}');">
                             <div class="service-icon mb-4">
                                 <i class="fa-solid fa-shapes text-white fs-3"></i>
                             </div>
