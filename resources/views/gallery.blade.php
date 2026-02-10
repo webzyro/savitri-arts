@@ -11,7 +11,7 @@
                 @foreach ($photos as $photo)
                     <div class="col-lg-4 col-md-6">
                         <div class="gallery-item rounded-5 overflow-hidden shadow-sm aspect-ratio-box">
-                            <img src="{{ asset('uploads/' . $photo->image) }}" alt="{{ $photo->alt_text }}"
+                            <img src="{{ Storage::disk('uploads')->url($photo->image) }}" alt="{{ $photo->alt_text }}"
                                 class="img-fluid w-100 h-100 object-fit-cover">
                         </div>
                     </div>
