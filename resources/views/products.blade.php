@@ -1,6 +1,6 @@
 <x-layout metaTitle="Savitri Arts and Advertisement | Products Page"
-    metaDescription="We create elegant, high end interiors that reflect comfort, sophistication, and timeless beauty turning everyday living into a luxurious experience."
-    metaKeywords="interior design, architecture, high-end interiors, luxury living, Savitri Arts and Advertisement">
+    metaDescription="Browse our curated selection of high-end design products and materials. From bespoke furniture to premium finishes, we provide the elements that make your space extraordinary."
+    metaKeywords="design products, luxury materials, bespoke furniture, premium finishes, home decor products, architectural materials">
     <x-breadcrumb title="Our Products" />
     <x-scrolling />
 </x-layout>

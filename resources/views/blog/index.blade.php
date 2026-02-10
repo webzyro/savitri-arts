@@ -1,6 +1,6 @@
 <x-layout metaTitle="Savitri Arts and Advertisement | Blog Page"
-    metaDescription="We create elegant, high end interiors that reflect comfort, sophistication, and timeless beauty turning everyday living into a luxurious experience."
-    metaKeywords="interior design, architecture, high-end interiors, luxury living, Savitri Arts and Advertisement">
+    metaDescription="Stay updated with the latest trends in interior design and architecture. Explore our blog for design tips, project insights, and creative inspiration from the experts at Savitri Arts."
+    metaKeywords="interior design blog, architecture trends, home decor tips, design insights, furniture styling, architecture news">
     <x-breadcrumb title="Our Blogs" />
     <x-scrolling />
 

@@ -1,6 +1,6 @@
 <x-layout metaTitle="Savitri Arts and Advertisement | Testimonials Page"
-    metaDescription="We create elegant, high end interiors that reflect comfort, sophistication, and timeless beauty turning everyday living into a luxurious experience."
-    metaKeywords="interior design, architecture, high-end interiors, luxury living, Savitri Arts and Advertisement">
+    metaDescription="Read what our clients have to say about their experience with Savitri Arts. Discover how we've transformed homes and offices through our expert architectural and interior design services."
+    metaKeywords="client testimonials, design reviews, interior design feedback, architecture project reviews, customer success stories, Savitri Arts reviews">
     <x-breadcrumb title="Testimonials" />
     <x-scrolling />
 

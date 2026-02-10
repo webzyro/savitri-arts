@@ -1,6 +1,6 @@
 <x-layout metaTitle="Savitri Arts and Advertisement | Gallery Page"
-    metaDescription="We create elegant, high end interiors that reflect comfort, sophistication, and timeless beauty turning everyday living into a luxurious experience."
-    metaKeywords="interior design, architecture, high-end interiors, luxury living, Savitri Arts and Advertisement">
+    metaDescription="Explore our portfolio of elegant interior design and architectural projects. Our gallery showcases a collection of high-end design work, from luxury residential to modern commercial spaces."
+    metaKeywords="interior design gallery, architecture portfolio, design projects, work showcase, luxury interiors, Savitri Arts portfolio">
     <x-breadcrumb title="Our Gallery" />
     <x-scrolling />
 

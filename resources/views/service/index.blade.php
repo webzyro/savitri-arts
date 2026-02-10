@@ -1,6 +1,6 @@
 <x-layout metaTitle="Savitri Arts and Advertisement | Services Page"
-    metaDescription="We create elegant, high end interiors that reflect comfort, sophistication, and timeless beauty turning everyday living into a luxurious experience."
-    metaKeywords="interior design, architecture, high-end interiors, luxury living, Savitri Arts and Advertisement">
+    metaDescription="Discover our comprehensive range of architecture and interior design services. From residential styling to commercial project management, we bring your vision to life with precision."
+    metaKeywords="residential architecture, commercial design, interior styling services, project management, technical design solutions, furniture consultancy">
     <x-breadcrumb title="Our Services" />
     <x-scrolling />
 
@@ -12,7 +12,7 @@
                 @foreach ($services as $service)
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item-card rounded-4 p-4 d-flex flex-column"
-                            style="background-image: url('{{ Storage::disk('uploads')->url($service->image) }}');">
+                            style="background-image: url('{{ asset('uploads/' . $service->image) }}');">
                             <div class="service-icon mb-4">
                                 <i class="fa-solid fa-shapes text-white fs-3"></i>
                             </div>
