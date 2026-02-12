@@ -52,70 +52,32 @@
                         </div>
 
                         <div class="mt-3">
-                            <h4 class="text-uppercase">Why Choose us for the Residential</h4>
-                            <p>Choosing us for your residential architecture means partnering with a team that truly
-                                understands how a home should look, feel, and function. We combine thoughtful design,
-                                technical expertise, and personalized service to create homes that perfectly match your
-                                lifestyle.</p>
+                            <h4 class="text-uppercase">{{ $service->sub_title }}</h4>
+                            <p>{{ $service->sub_desc }}</p>
                         </div>
 
 
                         <!-- Why choose us cards -->
-                        <div class="row g-4 mt-3">
-                            <!-- item 1 -->
-                            <div class="col-md-6">
-                                <div class="why-choose-item">
-                                    <div class="why-choose-icon">
-                                        <i class="fa-solid fa-shapes"></i>
+                        @if ($service->features->count() > 0)
+                            <div class="row g-4 mt-3">
+                                @foreach ($service->features as $feature)
+                                    <div class="col-md-6">
+                                        <div class="why-choose-item">
+                                            <div class="why-choose-icon">
+                                                <i class="{{ $feature->icon }}"></i>
+                                            </div>
+                                            <h5 class="why-choose-title">{{ $feature->title }}</h5>
+                                            <p class="why-choose-text">{{ $feature->description }}</p>
+                                        </div>
                                     </div>
-                                    <h5 class="why-choose-title">Tailored Home Designs</h5>
-                                    <p class="why-choose-text">We create homes that truly reflect your lifestyle,
-                                        preferences, and future needs—ensuring every space feels personal.</p>
-                                </div>
+                                @endforeach
                             </div>
-                            <!-- item 2 -->
-                            <div class="col-md-6">
-                                <div class="why-choose-item">
-                                    <div class="why-choose-icon">
-                                        <i class="fa-solid fa-layer-group"></i>
-                                    </div>
-                                    <h5 class="why-choose-title">Expert Craft & Detailing</h5>
-                                    <p class="why-choose-text">From structural elements to finishing touches, our team
-                                        delivers exceptional quality with meticulous attention.</p>
-                                </div>
-                            </div>
-                            <!-- item 3 -->
-                            <div class="col-md-6">
-                                <div class="why-choose-item">
-                                    <div class="why-choose-icon">
-                                        <i class="fa-solid fa-vector-square"></i>
-                                    </div>
-                                    <h5 class="why-choose-title">Customized Planning</h5>
-                                    <p class="why-choose-text">We manage the entire residential design process, ensuring
-                                        smooth communication, timely updates.</p>
-                                </div>
-                            </div>
-                            <!-- item 4 -->
-                            <div class="col-md-6">
-                                <div class="why-choose-item">
-                                    <div class="why-choose-icon">
-                                        <i class="fa-solid fa-gear"></i>
-                                    </div>
-                                    <h5 class="why-choose-title">Sustainable Future Solutions</h5>
-                                    <p class="why-choose-text">Our designs integrate smart planning, energy efficiency,
-                                        and sustainable materials to create homes.</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endif
 
                         <!-- Our Process -->
                         <div class="mt-5">
                             <h2 class="text-uppercase fw-bold mb-3">Our Process</h2>
-                            <p class="mb-5">Our process is designed to guide you smoothly from concept to completion.
-                                With structured
-                                steps, transparent communication, and expert coordination, we ensure your project moves
-                                forward efficiently and stress-free. Every phase is handled with care, precision, and a
-                                commitment to delivering exceptional results.</p>
+                            <p class="mb-5">{{ $service->process_text }}</p>
 
                             <div class="row g-4">
                                 <!-- Step 01 -->
