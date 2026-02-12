@@ -16,7 +16,12 @@ class BlogController extends Controller
     public function show(string $slug)
     {
         $blog = Blog::where('slug', $slug)->firstOrFail();
+        $allBlogs = Blog::where('is_active', true)
+            ->where('slug', '!=', $slug)
+            ->latest()
+            ->take(5)
+            ->get();
 
-        return view('blog.show', ['blog' => $blog]);
+        return view('blog.show', ['blog' => $blog, 'allBlogs' => $allBlogs]);
     }
 }
