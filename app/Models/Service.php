@@ -15,5 +15,13 @@ class Service extends Model
         'meta_description',
         'meta_keywords',
         'is_active',
+        'sub_title',
+        'sub_desc',
+        'process_text',
     ];
+
+    public function features()
+    {
+        return $this->hasMany(ServiceFeature::class);
+    }
 }

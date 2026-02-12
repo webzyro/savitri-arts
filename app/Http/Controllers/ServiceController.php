@@ -16,7 +16,7 @@ class ServiceController extends Controller
 
     public function show(string $slug)
     {
-        $service = Service::where('slug', $slug)->firstOrFail();
+        $service = Service::where('slug', $slug)->with('features')->firstOrFail();
         $allServices = Service::where('is_active', true)->latest()->take(5)->get();
 
         return view('service.show', [
