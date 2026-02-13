@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
@@ -32,4 +33,6 @@ Route::get('/our-services/{slug}', [ServiceController::class, 'show'])->name('se
 Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials');
 
 Route::get('/our-gallery', [GalleryController::class, 'index'])->name('gallery');
+
+Route::post('/contact-submit', [ContactController::class, 'store'])->name('contact.store');
 

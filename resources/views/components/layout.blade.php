@@ -48,6 +48,21 @@
 <body>
     <x-header />
     <x-navbar />
+
+    @if (session('success'))
+        <div class="alert alert-success d-inline-block position-fixed top-0 end-0 m-3" role="alert"
+            style="z-index: 999;">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    @if (session('error'))
+        <div class="alert alert-danger d-inline-block position-fixed top-0 end-0 m-3" role="alert"
+            style="z-index: 999;">
+            {{ session('error') }}
+        </div>
+    @endif
+
     <main>
         {{ $slot }}
     </main>

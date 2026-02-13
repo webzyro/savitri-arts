@@ -411,7 +411,7 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-0">Phone Number</h6>
-                                <p class="text-secondary small mb-0">+(123) 456-789</p>
+                                <p class="text-secondary small mb-0">+91-8664521195</p>
                             </div>
                         </div>
 
@@ -455,31 +455,47 @@
                             looking for expert advice, a consultation, or just want to explore design possibilities.
                         </p>
 
-                        <form id="contactForm" class="row g-4">
+                        <form action="{{ route('contact.store') }}" method="POST" id="contactForm" class="row g-4">
+                            @csrf
                             <div class="col-md-6">
                                 <label class="form-label fw-bold small">First Name*</label>
-                                <input type="text" class="form-control bg-light border-0 py-3"
-                                    placeholder="Enter Your First Name">
+                                <input type="text" name="first_name" value="{{ old('first_name') }}"
+                                    class="form-control bg-light border-0 py-3" placeholder="Enter Your First Name">
+                                @error('first_name')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-bold small">Last Name*</label>
-                                <input type="text" class="form-control bg-light border-0 py-3"
-                                    placeholder="Enter Your Last Name">
+                                <input type="text" name="last_name" value="{{ old('last_name') }}"
+                                    class="form-control bg-light border-0 py-3" placeholder="Enter Your Last Name">
+                                @error('last_name')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-bold small">Phone Number*</label>
-                                <input type="tel" class="form-control bg-light border-0 py-3"
-                                    placeholder="Enter Your Phone Number">
+                                <input type="tel" name="phone" value="{{ old('phone') }}"
+                                    class="form-control bg-light border-0 py-3" placeholder="Enter Your Phone Number">
+                                @error('phone')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-bold small">Email Address*</label>
-                                <input type="email" class="form-control bg-light border-0 py-3"
-                                    placeholder="Enter Your Email Address">
+                                <input type="email" name="email" value="{{ old('email') }}"
+                                    class="form-control bg-light border-0 py-3" placeholder="Enter Your Email Address">
+                                @error('email')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                             <div class="col-12">
                                 <label class="form-label fw-bold small">Message*</label>
-                                <textarea class="form-control bg-light border-0 py-3" rows="2"
-                                    placeholder="Any Additional Message.."></textarea>
+                                <textarea name="message" class="form-control bg-light border-0 py-3" rows="2"
+                                    placeholder="Any Additional Message..">{{ old('message') }}</textarea>
+                                @error('message')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                             <div class="col-12 mt-5">
                                 <button type="submit" class="btn btn-submit px-5 py-3 rounded-pill text-white fw-bold">
