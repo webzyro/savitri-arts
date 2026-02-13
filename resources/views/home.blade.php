@@ -19,11 +19,12 @@
                 living.
             </p>
             <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-                <a href="tel:+91-1234567890"
+                <a href="tel:+91-7050720820"
                     class="text-decoration-none btn-quote px-4 py-3 rounded-pill d-flex align-items-center gap-2">Get
                     Free Quote
                     <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="#" class="btn btn-video d-flex align-items-center gap-2 text-white text-decoration-none">
+                <a href="{{ route('testimonials') }}"
+                    class="btn btn-video d-flex align-items-center gap-2 text-white text-decoration-none">
                     <div
                         class="play-icon d-flex align-items-center justify-content-center rounded-circle bg-warning text-dark">
                         <i class="fa-solid fa-play"></i>
@@ -132,121 +133,42 @@
 
             <!-- Services Grid -->
             <div class="row g-4 mb-5">
-                <!-- Service 1 -->
-                <div class="col-lg-3 col-md-6">
-                    <div
-                        class="service-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column justify-content-between">
-                        <div class="service-bg-img position-absolute top-0 start-0 w-100 h-100" style="
-                    background-image: url(&quot;assets/images/about2.avif&quot;);
-                  "></div>
-                        <div class="position-relative z-1 content-wrapper">
-                            <div class="icon-box mb-4">
-                                <i class="fa-solid fa-vector-square fs-1 text-outline"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3 service-title">
-                                Residential Architecture
-                            </h4>
-                            <p class="text-secondary small mb-0 service-desc">
-                                Designing modern, functional & personalized high-quality
-                                homes
-                            </p>
-                        </div>
-                        <div class="position-relative z-1 mt-4">
-                            <a href="#"
-                                class="btn-arrow rounded-circle d-flex align-items-center justify-content-center border">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Service 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div
-                        class="service-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column justify-content-between">
-                        <div class="service-bg-img position-absolute top-0 start-0 w-100 h-100" style="
-                    background-image: url(&quot;assets/images/service2.avif&quot;);
-                  "></div>
-                        <div class="position-relative z-1 content-wrapper">
-                            <div class="icon-box mb-4">
-                                <i class="fa-solid fa-city fs-1 text-outline"></i>
+                @foreach ($services as $service)
+                    <!-- Service 1 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div
+                            class="service-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column justify-content-between">
+                            <div class="service-bg-img position-absolute top-0 start-0 w-100 h-100" style="
+                                                        background-image: url('{{ Storage::disk('uploads')->url($service->image) }}');
+                                                      "></div>
+                            <div class="position-relative z-1 content-wrapper">
+                                <div class="icon-box mb-4">
+                                    <i class="fa-solid fa-vector-square fs-1 text-outline"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3 service-title">
+                                    {{ $service->title }}
+                                </h4>
+                                <p class="text-secondary small mb-0 service-desc">
+                                    {{ Str::limit(strip_tags($service->description), 60) }}
+                                </p>
                             </div>
-                            <h4 class="fw-bold mb-3 service-title">
-                                Commercial Architecture
-                            </h4>
-                            <p class="text-secondary small mb-0 service-desc">
-                                Creating innovative office space & unique commercial
-                                buildings
-                            </p>
-                        </div>
-                        <div class="position-relative z-1 mt-4">
-                            <a href="#"
-                                class="btn-arrow rounded-circle d-flex align-items-center justify-content-center border">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
+                            <div class="position-relative z-1 mt-4">
+                                <a href="{{ route('service.show', $service->slug) }}"
+                                    class="btn-arrow text-decoration-none rounded-circle d-flex align-items-center justify-content-center border">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="col-lg-3 col-md-6">
-                    <div
-                        class="service-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column justify-content-between">
-                        <div class="service-bg-img position-absolute top-0 start-0 w-100 h-100" style="
-                    background-image: url(&quot;assets/images/service3.avif&quot;);
-                  "></div>
-                        <div class="position-relative z-1 content-wrapper">
-                            <div class="icon-box mb-4">
-                                <i class="fa-solid fa-swatchbook fs-1 text-outline"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3 service-title">
-                                Interior Design & Styling
-                            </h4>
-                            <p class="text-secondary small mb-0 service-desc">
-                                Curating elegant interiors with color, light, furniture &
-                                material
-                            </p>
-                        </div>
-                        <div class="position-relative z-1 mt-4">
-                            <a href="#"
-                                class="btn-arrow rounded-circle d-flex align-items-center justify-content-center border">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="col-lg-3 col-md-6">
-                    <div
-                        class="service-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column justify-content-between">
-                        <div class="service-bg-img position-absolute top-0 start-0 w-100 h-100" style="
-                    background-image: url(&quot;assets/images/service4.avif&quot;);
-                  "></div>
-                        <div class="position-relative z-1 content-wrapper">
-                            <div class="icon-box mb-4">
-                                <i class="fa-solid fa-magnet fs-1 text-outline"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3 service-title">Project Management</h4>
-                            <p class="text-secondary small mb-0 service-desc">
-                                Handle the complete execution process with quality, & budget
-                            </p>
-                        </div>
-                        <div class="position-relative z-1 mt-4">
-                            <a href="#"
-                                class="btn-arrow rounded-circle d-flex align-items-center justify-content-center border">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
 
             <!-- Bottom Strip -->
             <div class="text-center pt-3">
                 <span class="badge bg-warning text-dark px-3 py-2 rounded-pill me-2">Free</span>
                 <span class="fw-medium text-secondary">Discover Our Tailored Architecture & Interior Services -
-                    <a href="#" class="text-dark fw-bold text-decoration-underline">Where Style Meets
+                    <a href="tel:+91-7050720820" class="text-dark fw-bold text-decoration-underline">Where Style Meets
                         Structure</a></span>
             </div>
         </div>

@@ -33,7 +33,7 @@
                             <h3>Contact Us Now!</h3>
                             <p>Have a project in mind or need expert advice on architecture and interior design?</p>
                             <div class="contact-cta-footer">
-                                Call At: +91-8664521195
+                                Call At: +91-7050720820
                             </div>
                         </div>
                     </div>
