@@ -10,13 +10,13 @@ class ContactController extends Controller
 {
     public function store(Request $req)
     {
-        if (RateLimiter::tooManyAttempts('contact-submission:' . $req->ip(), $perMinute = 5)) {
-            return response()->json([
-                'message' => 'Too many requests. Please try again after ' . RateLimiter::availableIn('contact-submission:' . $req->ip()) . ' seconds.'
-            ], 429);
+        $key = 'contact-submission:' . $req->ip();
+
+        if (RateLimiter::tooManyAttempts($key, 5)) {
+            return redirect()->back()->with('error', 'Too many requests. Please try again after ' . RateLimiter::availableIn($key) . ' seconds.');
         }
 
-        RateLimiter::hit('contact-submission:' . $req->ip());
+        RateLimiter::hit($key);
 
         $req->validate([
             'first_name' => 'required|string|min:3|max:20',
