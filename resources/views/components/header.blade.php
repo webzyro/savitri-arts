@@ -4,11 +4,12 @@
             <div class="d-flex align-items-center gap-4">
                 <div class="d-flex align-items-center gap-2">
                     <i class="fa-solid fa-phone text-white"></i>
-                    <a href="tel:5669824465" class="text-decoration-none text-white">8664521195</a>
+                    <a href="tel:+91-7050720820" class="text-decoration-none text-white">+91-7050720820</a>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <i class="fa-solid fa-envelope-circle-check text-white"></i>
-                    <a href="mailto:info@gmail.com" class="text-decoration-none text-white">info@gmail.com</a>
+                    <a href="mailto:savitriartskh@gmail.com"
+                        class="text-decoration-none text-white">savitriartskh@gmail.com</a>
                 </div>
             </div>
             <div class="d-none d-lg-flex align-items-center gap-2">

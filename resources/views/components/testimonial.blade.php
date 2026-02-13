@@ -126,7 +126,8 @@
                 </div>
                 <p class="text-secondary mb-0 small">Experience design where vision and precision come together
                     beautifully –
-                    <a href="#" class="text-dark fw-bold text-decoration-underline">Contact Us Today</a>
+                    <a href="{{ route('contact') }}" class="text-dark fw-bold text-decoration-underline">Contact Us
+                        Today</a>
                 </p>
             </div>
             <div class="rating-box">

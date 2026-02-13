@@ -66,15 +66,15 @@
                     <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
                     <div>
                         <p class="mb-0 fw-bold">E-mail Us</p>
-                        <a href="mailto:info@domainname.com"
-                            class="text-white-50 text-decoration-none small">info@domainname.com</a>
+                        <a href="mailto:savitriartskh@gmail.com"
+                            class="text-white-50 text-decoration-none small">savitriartskh@gmail.com</a>
                     </div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
                     <div>
                         <p class="mb-0 fw-bold">Urgent Inquiries</p>
-                        <a href="tel:+123456789" class="text-white-50 text-decoration-none small">+91-9876543210</a>
+                        <a href="tel:+91-7050720820" class="text-white-50 text-decoration-none small">+91-7050720820</a>
                     </div>
                 </div>
             </div>
