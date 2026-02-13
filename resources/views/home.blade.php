@@ -466,7 +466,7 @@
                                 @enderror
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label fw-bold small">Last Name*</label>
+                                <label class="form-label fw-bold small">Last Name</label>
                                 <input type="text" name="last_name" value="{{ old('last_name') }}"
                                     class="form-control bg-light border-0 py-3" placeholder="Enter Your Last Name">
                                 @error('last_name')
@@ -482,7 +482,7 @@
                                 @enderror
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label fw-bold small">Email Address*</label>
+                                <label class="form-label fw-bold small">Email Address</label>
                                 <input type="email" name="email" value="{{ old('email') }}"
                                     class="form-control bg-light border-0 py-3" placeholder="Enter Your Email Address">
                                 @error('email')
