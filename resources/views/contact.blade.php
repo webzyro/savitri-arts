@@ -25,7 +25,7 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-0">Phone Number</h6>
-                                <p class="text-secondary small mb-0">+(123) 456-789</p>
+                                <p class="text-secondary small mb-0">+91-7050720820</p>
                             </div>
                         </div>
 
@@ -36,7 +36,7 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-0">Email Address</h6>
-                                <p class="text-secondary small mb-0">info@domainname.com</p>
+                                <p class="text-secondary small mb-0">savitriartskh@gmail.com</p>
                             </div>
                         </div>
 
@@ -47,7 +47,8 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-0">Our Location</h6>
-                                <p class="text-secondary small mb-0">2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                <p class="text-secondary small mb-0">C/O- Tej Narayan Yadav, Power Grid Road, Chandra
+                                    Nagar Ranko Khagaria
                                 </p>
                             </div>
                         </div>
